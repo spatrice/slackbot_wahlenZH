@@ -1,0 +1,12 @@
+ssh -i ~/.ssh/foundations_key root@68.183.67.96 
+cd wahlen2019
+scp -i ~/.ssh/foundations_key ~/Documents/Tages-Anzeiger/Code/Slackbot_Wahlen/* root@68.183.67.96:~/wahlen2019
+
+
+scp -i ~/.ssh/foundations_key ~/Documents/Tages-Anzeiger/Code/Slackbot_Wahlen/* root@68.183.67.96:~/wahlen2019
+
+* * * * 0 cd ~/wahlen2019/ && python3 slackbot_messages.py
+
+
+
+scp -i ~/.ssh/foundations_key ~/Documents/Tages-Anzeiger/Code/Slackbot_Wahlen/*_fertig*.txt root@68.183.67.96:~/wahlen2019
